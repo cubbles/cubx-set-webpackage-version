@@ -69,7 +69,6 @@
         var manifest;
         beforeEach(function () {
           manifest = JSON.parse(fs.readFileSync(sampleManifestPath, 'utf8'));
-          wpVersionSetter.manifest = manifest;
         });
         after(function () {
           manifest.version = newVersion + '-SNAPSHOT';
