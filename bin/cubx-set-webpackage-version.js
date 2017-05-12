@@ -10,11 +10,11 @@ var optionDefinitions = [
 var options = commandLineArgs(optionDefinitions);
 
 if (!options.webpackagePath) {
-  console.error('Missed necessary parameter "webpackagePath". Usage: cubx-prepare-webpackage-release -p <webpackagPath>');
+  console.error('Missed necessary parameter "webpackagePath". Usage: cubx-prepare-webpackage-release -p <webpackagPath> -v <version>');
   process.exit(0);
 }
 if (!options.version) {
-  console.error('Missed necessary parameter "version". Usage: cubx-prepare-webpackage-release -v <version>');
+  console.error('Missed necessary parameter "version". Usage: cubx-prepare-webpackage-release -p <webpackagPath> -v <version>');
   process.exit(0);
 }
 var setter = new WebpackageVersionSetter(options.webpackagePath, options.version);
