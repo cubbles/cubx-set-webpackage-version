@@ -7,15 +7,16 @@ Module for setting the version of a webpackage.
 Usage: 
 * command line: 
 
-
-    cubx-set-webpackage-version -p <webpackagPath> -v <version>
+```bash
+cubx-set-webpackage-version -p <webpackagePath> -V <webpackageVersion>
+```
 
 *  other npm modules
 
-
+```javascript
     var webpackagePath = ...
-    var version = ...
-    var WebpackageVersionSetter = requiere('cubx-set-webpackage-version');
-    var wpVersionSetter = new WebpackageVersionSetter(webpackagePath, version);
+    var webpackageVersion = ...
+    var WebpackageVersionSetter = require('cubx-set-webpackage-version');
+    var wpVersionSetter = new WebpackageVersionSetter(webpackagePath, webpackageVersion);
     wpVersionSetter.setManifestVersion();
- 
+```
