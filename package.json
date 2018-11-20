@@ -1,6 +1,6 @@
 {
   "name": "cubx-set-webpackage-version",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Package to set the version of a Cubbles webpackage",
   "main": "lib/cubx-set-webpackage-version.js",
   "bin": {
